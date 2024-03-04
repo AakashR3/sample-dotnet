@@ -1,0 +1,12 @@
+﻿@page
+@model IndexModel
+@{
+    Layout = null; // Disable the master layout
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to 2022</h1>
+    <p>User Agent: @HttpContext.Request.Headers["User-Agent"].ToString()</p>
+</div>
+
